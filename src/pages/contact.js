@@ -1,35 +1,17 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
-import styles from './blog.module.css'
+import Helmet from 'react-helmet'
 
 
 class ContactIndex extends React.Component {
   render() {
     const contactPage = get(this, 'props.data.contentfulPage')
-
-    /*return (
-      <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
-        <div className="wrapper">
-          <div className={styles.hero}>Blog</div>
-          <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
-            {posts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <ArticlePreview article={node} />
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      </div>
-    )
-    */
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+  
    return(
 
       <div className="image-pannel">
+      <Helmet title={siteTitle} />
       <div className="stext"
       dangerouslySetInnerHTML={{
         __html: contactPage.description.childMarkdownRemark.html,

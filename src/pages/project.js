@@ -1,8 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './blog.module.css'
 
 
 class ProjectIndex extends React.Component {
@@ -13,6 +11,7 @@ class ProjectIndex extends React.Component {
    return(
 
       <div className="image-pannel">
+      <Helmet title={siteTitle} />
       </div>
 
    )

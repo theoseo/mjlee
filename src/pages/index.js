@@ -1,15 +1,14 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Hero from '../components/hero'
 
 class RootIndex extends React.Component {
   render() {
-
+   const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     return (
       
       <div className="image-pannel">
+      <Helmet title={siteTitle} />
       </div>
       
     );
