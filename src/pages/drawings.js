@@ -19,7 +19,7 @@ class DrawingsIndex extends React.Component {
 
       <div className="image-pannel">
       <Helmet title={siteTitle} />
-      <Glider page={location.pathname} data={drawings}/>
+      <Glider data={drawings}/>
       </div>
          
     )

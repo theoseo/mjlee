@@ -5,6 +5,7 @@ import style from './style.css'
 import Container from '../components/container'
 import get from 'lodash/get'
 
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -19,7 +20,7 @@ class Template extends React.Component {
     }
 
     let navigation = <div className="menu" style={{display:'hidden'}}></div>
-    let projects =  <ul class="projects">
+    let projects =  <ul className="projects">
     {postIndex.edges.map(({ node }) => {
        return (
        <li key={node.slug}>
