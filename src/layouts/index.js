@@ -72,7 +72,7 @@ export default Template
 
 export const query = graphql`
   query menuQuery {
-   allContentfulProject(sort: { fields: [createdAt], order: DESC }) {
+   allContentfulProject(sort: { fields: [createdAt], order: ASC }) {
       edges {
         node {
           title
