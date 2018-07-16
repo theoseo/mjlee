@@ -1,4 +1,22 @@
-# gatsby-contentful-starter
+# Migration from Wordpress to Gatsby-Contentful using gatsby-contentful-starter
+
+[www.mjlee-draws.com](https://mjlee-draws.com) site orginally created using Wordpress and its theme which I created. Site owner and I decided to move from Wordpress to static website. Gatsby and Contentful were the one of the best choices.
+
+### Create Gatsbyjs site using Contentful
+
+I used [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter) to set up [Contentful](http://contentful.com) environment. It automatically set contentful API environments. Basically, I refered [GatsbyJS and Contentful in five minutes](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/). After I set up Contentful environment, I migrated my Wordpress theme of mjlee-draws.com to Gatsbyjs. 
+
+- [ ] To do : How I create my own Gatsby site based on my Wordpress theme.
+
+### Site Deploy to Netlify
+
+There are two options to deploy my code. The first is to use [Netlifyctl](https://github.com/netlify/netlifyctl) which is based on command line. The second option is to add my git repository to Netlify. When you use this option, you have to add Contentful Space Id and Access Token as CONTENTFUL_SPACE_ID and CONTENTFUL_DELIVERY_TOKEN from your .contentful.json file to Netlify's build environment variables.
+
+- [ ] To do : How to automatically rebuild my gatsby site when a content is published in Contentful
+
+### Gatsby Contentful Starter readme 
+
+This is originally from [gatsby-contentful-starter readme file](https://github.com/contentful-userland/gatsby-contentful-starter/)
 
 Gatsby [Contentful](https://www.contentful.com) starter for creating a blog
 
