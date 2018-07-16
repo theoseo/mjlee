@@ -1,0 +1,28 @@
+.glide_back_right {
+   z-index:1000;
+   background-position:center right;
+   background-repeat: no-repeat;         
+   border:none;
+   width: 40%;
+   height: 100%;
+   box-shadow:none;
+}
+
+.glide_back_right:hover {
+
+   background-image: url('/img/arrow-red-right-64x64.png');
+   background-position:center right;
+   background-repeat: no-repeat;      
+}
+
+.glide_back_left {
+   z-index:1000;
+   background-image: url('/img/arrow-left.png');
+   background-position:center left;
+   background-repeat: no-repeat;   
+   border:none;
+   width: 20px;
+   height: 36px;
+   box-shadow:none;
+}
+
