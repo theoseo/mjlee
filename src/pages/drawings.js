@@ -31,7 +31,7 @@ export default DrawingsIndex
 
 export const drawingQuery = graphql`
 query drawings {
-   allContentfulDrawing(sort: { fields: [createdAt], order: DESC }) {
+   allContentfulDrawing(sort: { fields: [createdAt], order: ASC }) {
       edges {
         node {
           title
