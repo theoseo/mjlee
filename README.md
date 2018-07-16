@@ -12,9 +12,13 @@ I used [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby
 
 There are two options to deploy my code. The first is to use [Netlifyctl](https://github.com/netlify/netlifyctl) which is based on command line. The second option is to add my git repository to Netlify. When you use this option, you have to add Contentful Space Id and Access Token as CONTENTFUL_SPACE_ID and CONTENTFUL_DELIVERY_TOKEN from your .contentful.json file to Netlify's build environment variables.
 
-- [ ] To do : How to automatically rebuild my gatsby site when a content is published in Contentful
+### Rebuild a site when a content is added in Contentful
 
-### Gatsby Contentful Starter readme 
+Contentful provides a method to rebuild a static website using webhook in [this post](https://www.contentful.com/developers/docs/tutorials/general/automate-site-builds-with-webhooks/). According to the post, Netlify users are able to create webhook url and add the url to Contentful's space webhook setting. This setting automatically updates a Gatsby site when content is updated or published on Contentful.
+
+
+
+### Gatsby Contentful Starter readme
 
 This is originally from [gatsby-contentful-starter readme file](https://github.com/contentful-userland/gatsby-contentful-starter/)
 
