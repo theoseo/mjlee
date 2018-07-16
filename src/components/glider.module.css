@@ -1,36 +1,42 @@
 
 .glide_back_right {
    z-index:1000;
-   background-image: url('/img/arrow-red-right-64x64.png');
+
    background-position:center right;
    background-repeat: no-repeat;         
    border:none;
-  /* width: 40%;
-   height: 100%;*/
-   opacity:0.5;
-   width: 20px;
-   height: 36px;
+   width: 40%;
+   height: 30%;
+   /*width: 20px;
+   height: 36px;*/
    box-shadow:none;
    
 }
 
 .glide_back_right:hover {
 
-   background-image: url('/img/arrow-red-right-64x64.png');
+   background-image: url('/img/arrow-right.png');
    background-position:center right;
    background-repeat: no-repeat;   
-   opacity:1;
-   transition: opacity 150ms ease, background 300ms ease-in-out;   
+
 }
 
 .glide_back_left {
    z-index:1000;
-   background-image: url('/img/arrow-left.png');
    background-position:center left;
    background-repeat: no-repeat;   
    border:none;
-   width: 20px;
-   height: 36px;
+   width: 40%;
+   height: 30%;
+   /*width: 20px;
+   height: 36px;*/
    box-shadow:none;
 }
 
+.glide_back_left:hover {
+
+   background-image: url('/img/arrow-left.png');
+   background-position:center left;
+   background-repeat: no-repeat;   
+
+}
