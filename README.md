@@ -1,6 +1,10 @@
 # Migration from Wordpress to Gatsby-Contentful using gatsby-contentful-starter
 
-[www.mjlee-draws.com](https://mjlee-draws.com) site orginally created using Wordpress and its theme which I created. Site owner and I decided to move from Wordpress to static website. Gatsby and Contentful were the one of the best choices.
+[www.mjlee-draws.com](https://mjlee-draws.com) site orginally created using Wordpress and its [theme](https://github.com/suhongs/mjlee-draws) which I created. Site owner and I decided to move from Wordpress to static website. Gatsby and Contentful were the one of the best choices.
+
+- [ ] To do : why Gatsbyjs?
+
+- [ ] To do : why Contentful?
 
 ### Create Gatsbyjs site using Contentful
 
