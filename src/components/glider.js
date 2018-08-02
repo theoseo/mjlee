@@ -49,11 +49,12 @@ class Glider extends React.Component {
          }
          </ul>
       }
-      else {
-
-         drawingSlide = <ul className="glide__slides" >
-         {
-            post.images.map((data, index) => (
+      else if(post !== null){
+         console.log(post)
+         var imageData = post.images;
+         var imageSlider = null;
+         if(imageData !== null){
+             imageSlider = imageData.filter(data=> data.images!== null).map((data, index) => (
                <li className="glide__slide" key={index} style={{
                     backgroundImage:'url(' + data.file.url + ')',
                     backgroundRepeat:'no-repeat'
@@ -61,13 +62,16 @@ class Glider extends React.Component {
               }}>
                </li>)) 
          }
+         
+         drawingSlide = <ul className="glide__slides" >
+          { imageSlider }
          <li className="glide__slide">
          <div className="stext"
          dangerouslySetInnerHTML={{
-           __html: post.description.childMarkdownRemark.html,
+           __html: (post.description!==null?post.description.childMarkdownRemark.html:null)
          }}
-       />         
-        </li>            
+         />         
+         </li>            
          </ul>
       }     
               
