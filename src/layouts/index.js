@@ -42,11 +42,11 @@ class Template extends React.Component {
       {projects}
        <ul className="other-menu">
        <li>
-       <Link to="/drawings/">drawings</Link>
+       <Link to="/drawings/">Drawings</Link>
        </li>
 
        <li>
-       <Link to="/contact/">contact</Link>
+       <Link to="/contact/">Contact</Link>
        </li>
        </ul>
        </div>
